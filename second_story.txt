@@ -7,5 +7,3 @@ git log : 커밋 기록을 볼 수 있다
 git reset --hard HEAD^ : 커밋 전 단계로 돌아간다
 
 git checkout 커밋코드 : 커밋 시점으로 돌아간다
-
-메인으로 어떻게 돌아가지
