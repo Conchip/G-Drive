@@ -36,3 +36,14 @@ stage 영역에 추가한다.
 ▷ unstage 영역에 작업중인 파일이 있을 때 섞이지 않고 싶을 때 사용한다.
 
 대부분의 경우에는 하드 리셋이나 복합 리셋을 사용하면 된다.
+
+■ 새 브랜치 만들기
+git checkout -b (브랜치명)
+※한꺼번에 하기
+git checkout (커밋별명) -b (브랜치명)
+
+■ 마스터 브랜치로 돌아가기
+git checkout master
+
+■ 브랜치 목록 보기
+git branch
