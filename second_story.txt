@@ -69,3 +69,6 @@ git status
 ■ stage 영역에서 제거
 git rm -r (제거할 것) --cached
 -r ▷ 폴더 제거시 사용
+
+■ 클론하기
+git clone (url) (저장할 폴더 이름)
