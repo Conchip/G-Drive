@@ -2,15 +2,21 @@
 
 김철수는 복권을 샀다
 
-git log : 커밋 기록을 볼 수 있다
+과거 커밋으로 가기
+■ git checkout (커밋 별명)
 
-git reset --hard HEAD^ : 커밋 전 단계로 돌아간다
+원래 상태로 되돌아오기
+■ git checkout master
 
-git checkout 커밋코드 : 커밋 시점으로 돌아간다
+■ 현재 커밋 삭제 & 과거 커밋으로 가기 (하드 리셋)
+git reset --hard HEAD^
+--hard ▷삭제하다
+HEAD^ ▷ 한 커밋 이전으로 되돌아가기
+HEAD^^ ▷ 두 커밋 ~~
+HEAD^^^ ▷ 세 커밋 ~~
 
-mixed reset : 커밋만 삭제하고 변경사항은 그대로 둔다.
-
-git reset HEAD^
+■ 강제로 푸시하기
+git push origin master --force
 
 ■ 복합 리셋
 ▷ 커밋만 삭제하고 파일 변경 사항은 그대로 둔다.
@@ -23,3 +29,10 @@ git reset HEAD^
 git remote -v
 ■ origin에서 코드가져오기
 git pull origin master
+
+■ 소포트 리셋
+▷ 되돌릴 커밋의 변경사항을 unstage 영역에 추가하지 않고
+stage 영역에 추가한다.
+▷ unstage 영역에 작업중인 파일이 있을 때 섞이지 않고 싶을 때 사용한다.
+
+대부분의 경우에는 하드 리셋이나 복합 리셋을 사용하면 된다.
